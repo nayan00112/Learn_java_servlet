@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Learn08_HttpSession</display-name>
+  <servlet>
+    <description></description>
+    <display-name>loginservlet</display-name>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>loginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>mainpage</display-name>
+    <servlet-name>mainpage</servlet-name>
+    <servlet-class>mainpage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mainpage</servlet-name>
+    <url-pattern>/mainpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>invalidate_session</display-name>
+    <servlet-name>invalidate_session</servlet-name>
+    <servlet-class>invalidate_session</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>invalidate_session</servlet-name>
+    <url-pattern>/invalidate_session</url-pattern>
+  </servlet-mapping>
+</web-app>

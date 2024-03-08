@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>LEARN07_servletcontext</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>servlet1</display-name>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>page</param-name>
+    <param-value>This is our page. (not show, last is output! revirse servlet config!)</param-value>
+  </context-param>
+  <context-param>
+    <param-name>page</param-name>
+    <param-value>This is our page 2.</param-value>
+  </context-param>
+  <context-param>
+    <param-name>page1</param-name>
+    <param-value>This is our page1</param-value>
+  </context-param>
+  <context-param>
+    <param-name>author</param-name>
+    <param-value>Nayan</param-value>
+  </context-param>
+  <context-param>
+    <param-name>site</param-name>
+    <param-value>mydata.com</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>servlet2</display-name>
+    <servlet-name>servlet2</servlet-name>
+    <servlet-class>servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>

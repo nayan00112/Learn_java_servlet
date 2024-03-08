@@ -1,0 +1,13 @@
+# Ignore compiled files 
+*.class 
+*.jar 
+*.project 
+*.prefs 
+*.jsdtscope 
+*.container 
+*.MF 
+*.component 
+*.classpath 
+*.name
+*.properties
+*.policy

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>LEARN08_headers</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>dispheaders</display-name>
+    <servlet-name>dispheaders</servlet-name>
+    <servlet-class>dispheaders</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispheaders</servlet-name>
+    <url-pattern>/dispheaders</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>disp_res_headers</display-name>
+    <servlet-name>disp_res_headers</servlet-name>
+    <servlet-class>disp_res_headers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>disp_res_headers</servlet-name>
+    <url-pattern>/disp_res_headers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>disp_res_headers_servlet</display-name>
+    <servlet-name>disp_res_headers_servlet</servlet-name>
+    <servlet-class>disp_res_headers_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>disp_res_headers_servlet</servlet-name>
+    <url-pattern>/disp_res_headers_servlet</url-pattern>
+  </servlet-mapping>
+</web-app>

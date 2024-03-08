@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+</head>
+<body>
+<h1>Student Form</h1>
+    <form action="servletrequest" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" max="100" min="0" value="20"><br>
+
+        <label for="hobbies">Hobbies: </label>
+        <label for="cricket">cricket</label>
+        <input type="checkbox" name="hobbies" id="cricket" value="cricket">
+        <label for="read">read</label>
+        <input type="checkbox" name="hobbies" id="read" value="read">
+        <label for="write">write</label>
+        <input type="checkbox" name="hobbies" id="write" value="write"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

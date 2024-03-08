@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert Cookies</title>
+</head>
+<body>
+<hr>
+<h1>Enter Cookies</h1>
+<menu>
+<li><a href="showcookies">Show cookie</a></li>
+</menu>
+<form action="addcookies" method="post">
+<label for="cooktitle">Cookie Title</label>
+<input type="text" name="cookietitle" id="cooktitle" required><br>
+<label for="cookdata">Cookie Data</label>
+<input type="text" name="cookiedata" id="cookdata" required>
+<input type="submit" value="add cookie">
+</form>
+
+<hr>
+
+<h1>Delete Cookie</h1>
+<form action="deletecook" method="post">
+<label for="cooktitle">Cookie Title</label>
+<input type="text" name="cookietitle" id="cooktitle" required><br>
+<input type="submit" value="delet cookie">
+</form>
+
+
+</body>
+</html>

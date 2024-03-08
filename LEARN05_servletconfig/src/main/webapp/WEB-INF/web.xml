@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>LEARN05_servletconfig</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>servlet_config</display-name>
+    <servlet-name>servlet_config</servlet-name>
+    <servlet-class>servlet_config</servlet-class>
+    <init-param>
+      <param-name>servletauthor</param-name>
+      <param-value>Nayan</param-value>
+    </init-param>
+    <init-param>
+      <param-name>servletauthor</param-name>
+      <param-value>Nayankumar ({ not show, first is taken })</param-value>
+    </init-param>
+    <init-param>
+      <param-name>college</param-name>
+      <param-value>GTUM</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet_config</servlet-name>
+    <url-pattern>/servlet_config</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>servlet_config2</display-name>
+    <servlet-name>servlet_config2</servlet-name>
+    <servlet-class>servlet_config2</servlet-class>
+    
+    <init-param>
+    <param-name>page0</param-name>
+    <param-value>This is page0.</param-value>
+    </init-param>
+    
+    <init-param>
+    <param-name>page1</param-name>
+    <param-value>This is page1.</param-value>
+    </init-param>
+    <init-param>
+      <param-name>servletauthor</param-name>
+      <param-value>Nayankumar</param-value>
+    </init-param>
+  
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet_config2</servlet-name>
+    <url-pattern>/servlet_config2</url-pattern>
+  </servlet-mapping>
+</web-app>
