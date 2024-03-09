@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-  <display-name>HiddenFormField_userstate_maintaining</display-name>
+  <display-name>LEARN10_filter</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
@@ -19,24 +19,42 @@
     <servlet-name>servlet</servlet-name>
     <url-pattern>/servlet</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>IDFilter</display-name>
+    <filter-name>IDFilter</filter-name>
+    <filter-class>IDFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>IDFilter</filter-name>
+    <url-pattern>/servlet</url-pattern>
+  </filter-mapping>
   <servlet>
     <description></description>
-    <display-name>servlet2</display-name>
-    <servlet-name>servlet2</servlet-name>
-    <servlet-class>servlet2</servlet-class>
+    <display-name>ErrorServlet</display-name>
+    <servlet-name>ErrorServlet</servlet-name>
+    <servlet-class>ErrorServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>servlet2</servlet-name>
-    <url-pattern>/servlet2</url-pattern>
+    <servlet-name>ErrorServlet</servlet-name>
+    <url-pattern>/ErrorServlet</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>invalidsession</display-name>
-    <servlet-name>invalidsession</servlet-name>
-    <servlet-class>invalidsession</servlet-class>
+    <display-name>NameLengthFilter</display-name>
+    <servlet-name>NameLengthFilter</servlet-name>
+    <servlet-class>NameLengthFilter</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>invalidsession</servlet-name>
-    <url-pattern>/invalidsession</url-pattern>
+    <servlet-name>NameLengthFilter</servlet-name>
+    <url-pattern>/Servlet</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>NameLengthFilter</display-name>
+    <filter-name>NameLengthFilter</filter-name>
+    <filter-class>NameLengthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>NameLengthFilter</filter-name>
+    <url-pattern>/servlet</url-pattern>
+  </filter-mapping>
 </web-app>
