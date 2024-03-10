@@ -11,3 +11,5 @@
 *.name
 *.properties
 *.policy
+*.MF
+*.jar

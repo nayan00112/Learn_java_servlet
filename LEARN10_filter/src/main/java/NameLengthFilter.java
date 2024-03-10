@@ -28,7 +28,7 @@ public class NameLengthFilter extends HttpFilter implements Filter {
 		PrintWriter out = response.getWriter();
 		int len = request.getParameter("name").length();
 		
-		if (len > 3 ) {
+		if (len > 2 ) {
 			
 			chain.doFilter(request, response);
 		}

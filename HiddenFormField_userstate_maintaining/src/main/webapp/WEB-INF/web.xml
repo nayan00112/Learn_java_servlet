@@ -39,4 +39,14 @@
     <servlet-name>invalidsession</servlet-name>
     <url-pattern>/invalidsession</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Myservlet</display-name>
+    <servlet-name>Myservlet</servlet-name>
+    <servlet-class>Myservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Myservlet</servlet-name>
+    <url-pattern>/Myservlet</url-pattern>
+  </servlet-mapping>
 </web-app>
